@@ -14,7 +14,8 @@
 	"dependencies": {
 		"@fontsource-variable/inter": "^5.2.8",
 		"@popperjs/core": "^2.11.8",
-		"bootstrap": "^5.3.8"
+		"bootstrap": "^5.3.8",
+		"swiper": "^14.0.5"
 	},
 	"devDependencies": {
 		"sass": "^1.101.0",

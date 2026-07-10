@@ -1,20 +1,16 @@
+// 1. Core foundation pieces
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
+// 2. Load your raw project design tokens
 @import "abstracts/colors";
+@import "abstracts/fonts";
+@import "vendors/bootstrap-overrides";
 
-$my-custom-colors: (
-	"orange": $orange,
-	"gray-dk": $gray-dk,
-	"gray-md": $gray-md,
-	"gray-lt": $gray-lt,
-	"gray-vl": $gray-vl,
-);
-
-$theme-colors: map-merge($theme-colors, $my-custom-colors);
-
+// 5. Run the master compilation engine
 @import "bootstrap/scss/bootstrap";
 
+// 6. Sub-theme design layout layers
 @import "base";
 @import "components";
 @import "layout";

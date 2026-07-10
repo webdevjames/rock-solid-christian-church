@@ -2,13 +2,11 @@
 import "@fontsource-variable/inter";
 import "../scss/styles.scss";
 
-// Plugins
-import "./countdown.js";
-
 // Import necessary BS elements (not all)
 import { Collapse } from "bootstrap";
+import { Offcanvas } from "bootstrap";
 
-// Intersection observer
+// Intersection observer for Header only
 const hero = document.querySelector(".hero");
 const header = document.querySelector("#header");
 const flyoutMenu = document.querySelector(".mobile-drawer-glass");
@@ -33,3 +31,8 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 observer.observe(hero);
+
+// Plugins
+import "./countdown.js";
+import "./slider.js";
+import "./animations.js";

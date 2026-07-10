@@ -1,0 +1,71 @@
+@use "../abstracts" as a;
+
+.texture-decor {
+	width: 756px;
+	height: 756px;
+	object-fit: contain;
+	opacity: 1;
+	pointer-events: none;
+
+	&.texture-decor-left {
+		top: 25%;
+		left: -320px;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&.texture-decor-right {
+		top: -50px;
+		right: -380px;
+
+		@media (max-width: 992px) {
+			right: -500px;
+		}
+	}
+}
+
+.ministry-carousel {
+	.swiper-wrapper {
+		transition-timing-function: linear !important;
+
+		.swiper-slide {
+			.opp-card {
+				.opp-card-title > p {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 5px;
+					color: a.$earth-dk;
+					transition: color 0.2s ease;
+
+					&:after {
+						content: "";
+						opacity: 0;
+						visibility: hidden;
+						width: 13px;
+						height: 13px;
+						background-image: url("../../img/icon-chevron-right.svg");
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center center;
+						background-attachment: scroll;
+						transition: opacity 0.5s ease;
+					}
+				}
+
+				&:hover {
+					.opp-card-title > p {
+						color: a.$orange;
+
+						&:after {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
+		}
+	}
+}

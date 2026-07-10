@@ -8,3 +8,13 @@ $font-main:
 	Arial,
 	sans-serif;
 $font-size: 18px;
+$font-heavy: 900;
+$font-bold: 700;
+
+.fw-900 {
+	font-weight: $font-heavy !important;
+}
+
+.fw-bold {
+	font-weight: $font-bold !important;
+}

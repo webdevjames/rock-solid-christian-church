@@ -1,0 +1,28 @@
+// Connect custom font stack variables to Bootstrap's typography settings
+$font-family-sans-serif: $font-main;
+$font-size-root: $font-size; // Optional: connects your 18px baseline setting
+
+// Color map configuration
+$my-custom-colors: (
+	"orange": $orange,
+	"earth-dk": $earth-dk,
+	"earth-md": $earth-md,
+	"earth-lt": $earth-lt,
+	"gray-lt": $gray-lt,
+);
+$theme-colors: map-merge($theme-colors, $my-custom-colors);
+
+// Border widths to use in "style" attributes
+// EX: --bs-border-width: 10px
+$border-widths: (
+	1: 1px,
+	2: 2px,
+	3: 3px,
+	4: 4px,
+	5: 5px,
+	6: 6px,
+	7: 7px,
+	8: 8px,
+	9: 9px,
+	10: 10px,
+);

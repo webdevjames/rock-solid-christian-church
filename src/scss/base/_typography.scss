@@ -15,12 +15,25 @@ h4,
 h5,
 h6 {
 	font-family: a.$font-main;
-	font-weight: bold !important;
+	font-weight: a.$font-bold;
 }
 
 .subheading {
 	font-size: 1.1rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: a.$gray-lt;
+	color: a.$earth-lt;
+}
+
+.main-callout-title {
+	width: 100%;
+	max-width: 1100px;
+	font-size: 2.25rem;
+	line-height: 1.1;
+	font-weight: 900;
+
+	@media (min-width: 1200px) {
+		font-size: 3.3rem;
+		line-height: 1;
+	}
 }

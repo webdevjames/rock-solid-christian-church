@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Production build outputs
+dist/
+
+# Local environment variables / secrets
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,26 @@
+@use "../abstracts" as a;
+
+html,
+body {
+	font-family: a.$font-main;
+	font-size: a.$font-size;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: a.$font-main;
+	font-weight: bold !important;
+}
+
+.subheading {
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: a.$gray-lt;
+}

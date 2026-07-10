@@ -6,11 +6,11 @@
 		<title>Rock Solid Christian Church</title>
 	</head>
 	<body>
-		<header class="mx-auto px-2 z-3 fixed-top">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid">
-					<a class="navbar-brand fw-bold" href="#">
-						<svg id="logo-rock-solid-christian-church" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.2 54.46">
+		<header class="fixed-top pt-4 px-4 pt-xxl-5 px-xxl-5">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0">
+				<div class="container-fluid d-flex justify-content-between align-items-center p-0">
+					<a class="navbar-brand p-0 m-0 logo-responsive" href="#">
+						<svg id="logo-rock-solid-christian-church" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.2 54.46" class="text-white fill-current">
 							<g id="Layer_1-2">
 								<path
 									class="cls-1"
@@ -31,34 +31,123 @@
 							</g>
 						</svg>
 					</a>
-					<div class="collapse navbar-collapse w-auto bg-dark bg-gradient rounded-pill" id="mainNav">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item"><a class="nav-link" href="#">Plan A Visit</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Who We Are</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Connect</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Ministries</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Media</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Give Online</a></li>
+
+					<div class="nav-capsule d-none d-xl-flex align-items-center gap-3 gap-xxl-4 px-3 py-2 rounded-pill shadow-sm">
+						<ul class="navbar-nav align-items-center gap-1 gap-xxl-2">
+							<li class="nav-item"><a class="nav-link text-white fw-medium px-2 py-1" href="#">Plan A Visit</a></li>
+							<li class="nav-item"><a class="nav-link text-white fw-medium px-2 py-1" href="#">Who We Are</a></li>
+							<li class="nav-item"><a class="nav-link text-white fw-medium px-2 py-1" href="#">Connect</a></li>
+							<li class="nav-item"><a class="nav-link text-white fw-medium px-2 py-1" href="#">Ministries</a></li>
+							<li class="nav-item"><a class="nav-link text-white fw-medium px-2 py-1" href="#">Events</a></li>
+							<li class="nav-item"><a class="nav-link text-white fw-medium px-2 py-1" href="#">Media</a></li>
 						</ul>
+
+						<div class="cta-hamburger d-flex align-items-center justify-content-center gap-2">
+							<a href="#" class="cta btn d-flex align-items-center justify-content-center rounded-pill px-3 btn-sm fw-medium"> Give Online </a>
+
+							<div class="hamburger rounded-circle d-flex align-items-center justify-content-center cursor-pointer shadow-sm" style="width: 38px; height: 38px">
+								<div class="lines d-flex flex-column align-items-center justify-content-between" style="width: 18px; height: 11px">
+									<div class="line d-inline-block" style="width: 18px; height: 2px"></div>
+									<div class="line d-inline-block" style="width: 18px; height: 2px"></div>
+									<div class="line d-inline-block" style="width: 18px; height: 2px"></div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+
+					<div class="d-flex align-items-center">
+						<a href="#" class="nav-link text-white small d-none d-xl-flex align-items-center gap-1 fw-light mx-0 me-md-3 me-xl-0">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_8_619)">
+									<path d="M8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11C13.0609 11 14.0783 10.5786 14.8284 9.82843C15.5786 9.07828 16 8.06087 16 7C16 5.93913 15.5786 4.92172 14.8284 4.17157C14.0783 3.42143 13.0609 3 12 3C10.9391 3 9.92172 3.42143 9.17157 4.17157C8.42143 4.92172 8 5.93913 8 7Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</g>
+								<defs>
+									<clipPath id="clip0_8_619">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							<span class="d-xxl-inline-block d-none">Create</span>Account
+						</a>
+
+						<button class="navbar-toggler d-block d-xl-none p-0 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+							<div class="hamburger rounded-circle d-flex align-items-center justify-content-center cursor-pointer shadow-sm bg-white" style="width: 44px; height: 44px">
+								<div class="lines d-flex flex-column align-items-center justify-content-between" style="width: 20px; height: 13px">
+									<div class="line bg-dark d-inline-block" style="width: 20px; height: 2px"></div>
+									<div class="line bg-dark d-inline-block" style="width: 20px; height: 2px"></div>
+									<div class="line bg-dark d-inline-block" style="width: 20px; height: 2px"></div>
+								</div>
+							</div>
+						</button>
+					</div>
 				</div>
 			</nav>
 		</header>
-		<main class="hero">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<h1>We're Glad You're Here</h1>
-						<p>We are a thriving and diverse community of real people experiencing real life together.</p>
-						BUTTONs
+
+		<div class="offcanvas offcanvas-end mobile-drawer-glass py-2" tabindex="-1" id="mobileMenu">
+			<div class="offcanvas-wrap h-100 bg-text-dark">
+				<div class="offcanvas-header justify-content-end p-4">
+					<button type="button" class="btn-close btn-close-white me-1 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body d-flex flex-column justify-content-between p-4 pt-0">
+					<ul class="navbar-nav gap-3 fs-4">
+						<li class="nav-item"><a class="nav-link text-white fw-medium" href="#" data-bs-dismiss="offcanvas">Plan A Visit</a></li>
+						<li class="nav-item"><a class="nav-link text-white fw-medium" href="#" data-bs-dismiss="offcanvas">Who We Are</a></li>
+						<li class="nav-item"><a class="nav-link text-white fw-medium" href="#" data-bs-dismiss="offcanvas">Connect</a></li>
+						<li class="nav-item"><a class="nav-link text-white fw-medium" href="#" data-bs-dismiss="offcanvas">Ministries</a></li>
+						<li class="nav-item"><a class="nav-link text-white fw-medium" href="#" data-bs-dismiss="offcanvas">Events</a></li>
+						<li class="nav-item"><a class="nav-link text-white fw-medium" href="#" data-bs-dismiss="offcanvas">Media</a></li>
+					</ul>
+
+					<div class="d-flex flex-column gap-3 mb-4">
+						<a href="#" class="btn btn-light rounded-pill py-2.5 mt-4 fw-medium w-100">Give Online</a>
+						<a href="#" class="btn btn-outline-light rounded-pill py-2.5 fw-light w-100">Create Account</a>
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<main class="hero position-relative vh-100 w-100 d-flex align-items-center justify-content-center overflow-hidden text-white px-4 py-4">
+			<div class="container position-relative z-1 text-center h-100 py-5 mt-5 d-flex flex-column align-items-center justify-content-between">
+				<div class="my-auto">
+					<h1 class="display-3 fw-bolder mb-3 text-shadow">We’re Glad You're Here</h1>
+					<p class="fs-2 fs-md-1 lh-2 max-w-2xl mx-auto mb-4 opacity-90 fw-500">
+						We are a thriving and diverse community of real <br class="d-none d-md-inline" />
+						people experiencing real life together.
+					</p>
+					<div class="button-row d-flex flex-column flex-sm-row align-items-center gap-3 justify-content-center">
+						<button type="button" class="btn btn-light btn-lg rounded px-4 py-2.5 fw-bold shadow-sm">Plan a Visit</button>
+						<button type="button" class="btn btn-lg rounded px-4 py-2.5 fw-bold shadow-sm">About Us</button>
+					</div>
+				</div>
+
+				<div class="mt-5 mb-3 pt-4">
+					<div class="mb-1 text-white fs-4 fw-light">Next Service Starts In:</div>
+					<!-- <div class="display-6 fs-3 fw-bold">00:00:00</div> -->
+					<div class="timer-container">
+						<!-- Text readout positioned in the center -->
+						<div class="time-display display-6 fs-3 fw-bold" id="timeDisplay">00:00</div>
+					</div>
+				</div>
+			</div>
+
+			<img src="src/img/hero-rock-solid-church.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0 filter-darken px-2 py-2" alt="Worship congregation singing along" style="border-radius: 50px" />
 		</main>
+
+		<section class="section-main">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-5">
+						<p class="subheading">Welcome to Rock Solid</p>
+						<h3 class="">Following the Holy Spirit, we exist to create a movement of disciple-making disciples.</h3>
+					</div>
+					<div class="col-12 col-md-4">
+						<p class="text-orange">Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in authentic unity.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<script type="module" src="/src/js/main.js"></script>
 	</body>

@@ -1,0 +1,8 @@
+@use "../abstracts/" as a;
+
+// Buttons
+.btn-gray-vl {
+	background-color: a.$gray-vl;
+	backdrop-filter: blur(1);
+	border: 1px solid white;
+}

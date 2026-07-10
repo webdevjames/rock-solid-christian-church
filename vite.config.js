@@ -24,4 +24,12 @@ export default defineConfig({
 			avif: { quality: 75 },
 		}),
 	],
+
+	css: {
+		preprocessorOptions: {
+			scss: {
+				silenceDeprecations: ["import", "mixed-decls", "color-functions", "global-builtin"],
+			},
+		},
+	},
 });

@@ -13,8 +13,8 @@ A responsive, performance-optimized landing page built using HTML, Bootstrap 5, 
 
 Clone the repository and install dependencies:
 \`\`\`bash
-git clone https://github.com/webdevjames/[your-repo-name].git
-cd [your-repo-name]
+git clone https://github.com/webdevjames/rock-solid-christian-church.git
+cd rock-solid-christian-church
 npm install
 \`\`\`
 

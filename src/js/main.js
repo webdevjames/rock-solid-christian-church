@@ -7,3 +7,26 @@ import "./countdown.js";
 
 // Import necessary BS elements (not all)
 import { Collapse } from "bootstrap";
+
+// Intersection observer
+const hero = document.querySelector(".hero");
+const targetElement = document.querySelector("#header");
+
+const observerOptions = {
+	root: null,
+	rootMargin: "-125px 0px 0px 0px",
+	threshold: 0,
+};
+
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		// If the hero div is no longer intersecting (scrolled past)
+		if (!entry.isIntersecting) {
+			targetElement.classList.add("scrolled");
+		} else {
+			targetElement.classList.remove("scrolled");
+		}
+	});
+}, observerOptions);
+
+observer.observe(hero);

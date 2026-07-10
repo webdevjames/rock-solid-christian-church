@@ -1,5 +1,20 @@
-@use "base";
-@use "components";
-@use "layout";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+@import "abstracts/colors";
+
+$my-custom-colors: (
+	"orange": $orange,
+	"gray-dk": $gray-dk,
+	"gray-md": $gray-md,
+	"gray-lt": $gray-lt,
+	"gray-vl": $gray-vl,
+);
+
+$theme-colors: map-merge($theme-colors, $my-custom-colors);
 
 @import "bootstrap/scss/bootstrap";
+
+@import "base";
+@import "components";
+@import "layout";

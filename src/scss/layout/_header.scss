@@ -64,29 +64,44 @@
 		}
 	}
 
-	.mobile-drawer-glass {
-		background: transparent !important;
-
-		.offcanvas-wrap {
-			background: rgba(15, 15, 15, 0.25) !important;
-			backdrop-filter: blur(20px);
-			-webkit-backdrop-filter: blur(20px);
-			border-left: 1px solid rgba(255, 255, 255, 0.1);
-			border-radius: 50px 0 0 50px;
-			overflow: hidden;
-
-			.offcanvas-header {
-				.btn-close {
-					margin-top: -4px;
-				}
-			}
-		}
-	}
-
 	&.scrolled {
 		padding-top: 1rem !important;
 		padding-bottom: 1rem !important;
 		background-color: rgba(black, 0.75);
 		backdrop-filter: blur(10px);
+
+		.nav-capsule {
+			background: transparent;
+			backdrop-filter: none;
+		}
+	}
+}
+
+.mobile-drawer-glass {
+	background: transparent !important;
+
+	.offcanvas-wrap {
+		background: rgba(15, 15, 15, 0.25) !important;
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+		border-left: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 50px 0 0 50px;
+		overflow: hidden;
+
+		.offcanvas-header {
+			.btn-close {
+				margin-top: -4px;
+			}
+		}
+	}
+
+	&.scrolled {
+		.offcanvas-wrap {
+			.offcanvas-header {
+				.btn-close {
+					margin-top: -12px;
+				}
+			}
+		}
 	}
 }

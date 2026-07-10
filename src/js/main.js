@@ -10,7 +10,8 @@ import { Collapse } from "bootstrap";
 
 // Intersection observer
 const hero = document.querySelector(".hero");
-const targetElement = document.querySelector("#header");
+const header = document.querySelector("#header");
+const flyoutMenu = document.querySelector(".mobile-drawer-glass");
 
 const observerOptions = {
 	root: null,
@@ -22,9 +23,11 @@ const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		// If the hero div is no longer intersecting (scrolled past)
 		if (!entry.isIntersecting) {
-			targetElement.classList.add("scrolled");
+			header.classList.add("scrolled");
+			flyoutMenu.classList.add("scrolled");
 		} else {
-			targetElement.classList.remove("scrolled");
+			header.classList.remove("scrolled");
+			flyoutMenu.classList.remove("scrolled");
 		}
 	});
 }, observerOptions);

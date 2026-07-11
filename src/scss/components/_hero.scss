@@ -2,6 +2,14 @@
 
 .hero {
 	.container {
+		.hero-lead {
+			font-size: 1.25rem;
+
+			@media (min-width: 768px) {
+				font-size: 2rem;
+			}
+		}
+
 		.button-row {
 			.btn {
 				&:nth-child(1) {

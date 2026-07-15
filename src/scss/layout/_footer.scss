@@ -1,0 +1,11 @@
+@use "../abstracts" as a;
+
+#footer .container .row {
+	.list-unstyled > li > a {
+		transition: color 0.2s ease;
+
+		&:hover {
+			color: a.$orange !important;
+		}
+	}
+}

@@ -7,10 +7,10 @@
 @import "abstracts/fonts";
 @import "vendors/bootstrap-overrides";
 
-// 5. Run the master compilation engine
+// 3. Run the master compilation engine
 @import "bootstrap/scss/bootstrap";
 
-// 6. Sub-theme design layout layers
+// 4. Sub-theme design layout layers
 @import "base";
 @import "components";
 @import "layout";

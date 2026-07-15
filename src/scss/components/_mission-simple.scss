@@ -56,4 +56,12 @@
 		position: relative;
 		z-index: 3;
 	}
+
+	.arrow-tooltip {
+		width: 35px;
+		height: 35px;
+		top: -8px;
+		left: calc(50% + 13px);
+		transform: translateX(-50%);
+	}
 }
